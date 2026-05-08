@@ -1,0 +1,27 @@
+﻿@model IntroduccionCsharp.Models.SumaAporB
+
+@{
+    ViewBag.Title = "SumaAporB";
+}
+
+<h2>SumaAporB</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form action="/" method="post">
+                <label for="NumA">Numero A:</label>
+                <input type="text" name="A" value="" />
+                <br />
+                <label for="NumB">Numero B:</label>
+                <input type="text" name="B" value="" />
+                <br />
+                <input type="submit" value="enviar" />
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <br />
+            <h1>La suma es: @Html.DisplayFor(model => model.ResString) = @Html.DisplayFor(model => model.Res)</h1>
+        </div>
+    </div>
+</div>
